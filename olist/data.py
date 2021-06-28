@@ -9,9 +9,10 @@ class Olist:
         Its values should be pandas.DataFrame loaded from csv files
         """
 
-        root_dir = os.path.dirname(os.path.dirname(__file__))
-        csv_path = os.path.join(root_dir, "raw_data", "csv")
+        # root_dir = os.path.dirname(os.path.dirname(__file__))
+        # csv_path = os.path.join(root_dir, "raw_data", "csv")
 
+        csv_path = ('../raw_data/csv')
         # Create the list file_names
         file_names = [f for f in os.listdir(csv_path) if f.endswith('.csv')]
 
